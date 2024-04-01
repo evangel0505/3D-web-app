@@ -1,5 +1,48 @@
-import { Application } from '@splinetool/runtime';
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>居中的iframe</title>
+        <style>
+        .container {
+            position: relative;
+            width: 1400px;
+            height: 600px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: lightgray;
 
-const canvas = document.getElementById('canvas3d');
-const app = new Application(canvas);
-app.load('https://prod.spline.design/jZWb17SaYDJZ54GO/scene.splinecode');
+       
+
+         }
+          body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(203, 203, 203); /* 设置背景色为黑色 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+          }
+          iframe {
+            border: none;
+          }
+
+        </style>
+        </head>
+        
+    <body>
+        <div class="container">
+            <a>Demo1</a>
+            <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1400px" height="600px" frameborder="0" scrolling="auto">
+            </iframe>
+          </div>
+        <div class="container">
+            <a>Demo1</a>
+            <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1400px" height="600px" frameborder="0" scrolling="auto">
+            </iframe>
+          </div>
+
+    </body>
+</html>
