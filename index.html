@@ -1,45 +1,49 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>居中的iframe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
         <style>
-        .container {
-            position: relative;
-            width: 1400px;
-            height: 600px;
-            margin-left: 20px;
-            margin-right: 20px;
-            background-color: lightgray;
-         }
-          body {
-            margin: 0;
-            padding: 0;
-            background-color: rgb(203, 203, 203); /* 设置背景色为黑色 */
+        body 
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container 
+        {
+
             display: flex;
             justify-content: center;
-            align-items: center;
-            
-            
-          }
-          iframe {
-            border: none;
-          }
+            flex-wrap: wrap;
 
+         }
+        .box
+        {
+            margin: 30 30;
+    
+        }
         </style>
         </head>
         
     <body>
         <div class="container">
-            <a>Demo1</a>
-            <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1400px" height="600px" frameborder="0" scrolling="auto">
-            </iframe>
-          </div>
-        <div class="container">
-            <a>Demo1</a>
-            <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1400px" height="600px" frameborder="0" scrolling="auto">
-            </iframe>
-          </div>
-
+            <div class="box">
+                <a>Demo1</a><br>
+                <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1440" height="600px" frameborder="0" scrolling="auto">
+                </iframe>
+            </div>
+            <div class="box">
+                <a>Demo2</a><br>
+                <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1440" height="600px" frameborder="0" scrolling="auto">
+                </iframe>
+            </div>
+            <div class="box">
+                <a>Demo3</a><br>
+                <iframe src="https://my.spline.design/untitled-3a545f5bff72ff2293dca8231a7a233a/" width="1440" height="600px" frameborder="0" scrolling="auto">
+                </iframe>
+            </div>
+        </div>
     </body>
 </html>
